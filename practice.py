@@ -1,6 +1,9 @@
+import requests
+import json
+import sys
 
-try:
-    x = int(input("tell me your x: "))
-    print(f"x is {x}")
-except ValueError:
-    print("x is not an integer.")
+x = requests.get("https://itunes.apple.com/search?entity=song&limit=100&term=topu")
+
+o = x.json()
+for result in o["results"]:
+    print(result["trackName"])

@@ -40,5 +40,9 @@ def takeInputFromUser(prompt):
         except ValueError:
             print("Please input an integer number!!!!")
 
-#calling the main function
-main()
+#calling the main function 
+#the if statemnt checking the system is calling the main function or not 
+#by default python call the main function to run a program. 
+#if we change __main__ to anything else, this file will not run, will just skip running.
+if __name__ == "__main__":
+    main()
