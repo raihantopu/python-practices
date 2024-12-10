@@ -24,7 +24,7 @@ public class Test{
                 return hour + ":" + splitedString[1] + ":" + splitedString[2]; 
             }
         }else{
-            String subString = s.substring(0, s.length() - 2);
+            Stripng subString = s.substring(0, s.length() - 2);
             String[] splitedString = subString.split(":");
             if(Integer.valueOf(splitedString[0]) == 12){
                 return "00:" + splitedString[1] + ":" + splitedString[2]; 
