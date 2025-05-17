@@ -40,6 +40,8 @@ df.rename(columns={'Name': 'Full Name'}, inplace=True)
 # Dropping a column
 df.drop(columns=['City'], inplace=True)
 
+##inplace=Ture -> original data is modifying (no copy created)
+
 ## **6️⃣ Filtering and Selection**
 # Selecting columns
 print(df[['Full Name', 'Age']])
